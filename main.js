@@ -37,31 +37,31 @@ console.log(variableNull);
 
 //Coerción/Conversión de datos
 //Declaro un tipo de dato numérico
-var num=5;
+var num = 5;
 console.log(num)
 
 console.log(String(num))
 console.log(typeof String(num))
-console.log((num+''))
-console.log(typeof (num+''))
+console.log((num + ''))
+console.log(typeof (num + ''))
 
 //Declaro un tipo de dato String
 
-var numero="-150"
+var numero = "-150"
 console.log(numero);
 
 console.log(+numero);
-console.log(typeof(+numero));
+console.log(typeof (+numero));
 
 console.log(Number(numero));
-console.log(typeof(Number(numero)));
+console.log(typeof (Number(numero)));
 
 
 //Declaro un tipo de dato Numérico
-var condicion2=1;
+var condicion2 = 1;
 //   0 / 1
 //Declaro un tipo de dato String
-var condicion="";
+var condicion = "";
 
 console.log(condicion2)
 console.log(condicion)
@@ -73,3 +73,57 @@ console.log(Boolean(condicion))
 console.log(!!condicion2)
 
 console.log(!!condicion)
+
+
+/* if(Condicion){
+//Se ejecuta este código si es true
+}else if(Otra Condicion){
+
+} else{
+    //Se ejecuta si la condición es false
+} */
+
+//Condicional if/else
+var respuesta = 'asdsa';
+var mensaje = '';
+if (respuesta === 3) {
+    console.log('Respuesta correcta')
+} else if (respuesta % 2 == 0) {
+    console.log('La respuesta es par');
+    mensaje = 'Entró como par';
+} else if (respuesta === 2) {
+    console.log('Casi!!')
+} else {
+    console.log('Respuesta incorrecta')
+    mensaje = 'Todo mal!!';
+}
+
+console.log(mensaje);
+
+
+
+//Switch
+
+var respuesta = 398;
+
+switch (respuesta) {
+    case 3:
+        console.log('Respuesta correcta');
+        break;
+    case 2:
+        console.log('Casi!!!')
+        break;
+    default:
+        console.log('Mal!!')
+}
+//for
+for(var i=0;i<=10;i++){
+    console.log(i);
+}
+
+//while
+var l=0;
+while(l<=10){
+    console.log(l);
+    l++;
+}
