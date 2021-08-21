@@ -117,13 +117,43 @@ switch (respuesta) {
         console.log('Mal!!')
 }
 //for
-for(var i=0;i<=10;i++){
+for (var i = 0; i <= 10; i++) {
     console.log(i);
 }
 
 //while
-var l=0;
-while(l<=10){
+var l = 0;
+while (l <= 10) {
     console.log(l);
     l++;
 }
+
+//do while
+
+var l = 0;
+do {
+    console.log(l);
+} while (l !== 0);
+
+
+//Funciones
+
+function miPrimeraFuncion(nombre) {
+    console.log('Hola, qué tal? ' + nombre);
+}
+
+miPrimeraFuncion('Ramón');
+miPrimeraFuncion(156);
+miPrimeraFuncion(true);
+
+
+var segundaFuncion = function (edad) {
+    console.log('Esta es una expresión de función ' + edad);
+}
+
+segundaFuncion(15);
+
+
+(function (nombre) {
+    console.log('Hola, qué tal? ' + nombre);
+})('Iván')
